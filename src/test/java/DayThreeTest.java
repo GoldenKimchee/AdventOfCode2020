@@ -32,16 +32,15 @@ public class DayThreeTest {
         String[][] testCases = generateTestCases();
 
         for (int i = 0; i < testCases.length; i++) {
-            Integer actual = DayThree.findTrees(testCases[i]);
+            Integer actual = DayThree.findTrees(testCases[i], 3, 1);
             Integer expected = expectedCases[i];
             try {
                 Assert.assertEquals(actual, expected);
             } catch (AssertionError assertError) {
-                System.out.println("Actual and expected do not match: " + assertError);
+                System.err.println("Actual and expected do not match: " + assertError);
                 Assert.fail();
             }
         }
-
         System.out.println("All tests passed.");
     }
 }
