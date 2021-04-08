@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 
 public class DayThreeTest {
 
-    public static String[][] generateTestCases() {
+    public String[][] generateTestCases() {
         String[] t1 = {"..##.........##.........##.........##.........##.........##.......",
                        "#...#...#..#...#...#..#...#...#..#...#...#..#...#...#..#...#...#..",
                        ".#....#..#..#....#..#..#....#..#..#....#..#..#....#..#..#....#..#.",
@@ -27,7 +27,7 @@ public class DayThreeTest {
     }
 
     @Test
-    public void testDay3() throws FileNotFoundException {
+    public void testDay3() {
         Integer[] expectedCases = {7, 0, 2};
         String[][] testCases = generateTestCases();
 
